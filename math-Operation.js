@@ -30,3 +30,25 @@ var total = (num1*num2);
 console.log(total);
 
 
+
+// ShortHand Operator and Math Operation
+var x = 75;
+x += 120;
+console.log(x)
+
+
+var y = 225;
+y -=100
+console.log(y)
+
+
+var num1 = 10;
+num1 *= 125;
+console.log(num1)
+
+
+var num2 = 50;
+num2 /= 5;
+console.log(num2)
+
+
