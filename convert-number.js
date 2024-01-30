@@ -10,4 +10,4 @@ var internel = parseInt(internetBill)
 var mobileBill = parseFloat(mobileRecharge)
 
 var totalBill = totalPrice + internel + mobileBill;
-console.log(totalBill)
+console.log(totalBill.toFixed(3))
