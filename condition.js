@@ -70,3 +70,41 @@ else if(age>70 && age<=100){
 else{
     console.log("My product is Free")
 }
+
+
+
+
+
+
+
+
+// Nested if Else condition 
+var years = 18;
+var isNID = true;
+var isVoterSl = true;
+if (years>=18){
+    if(isNID==true){
+        if(isVoterSl==true){
+            console.log("Vote Daw")
+        }
+        else{
+            console.log("Please give show me voter sl no")
+        }
+    }
+    else{
+        console.log("Please show me NID card")
+    }
+}else{
+    console.log("Your are a not voter. Please wait...")
+}
+
+
+
+
+
+
+
+// ternary Operator condition
+
+var applePrice = 140;
+applePrice<=250 ? console.log("2 KG nibo") : console.log("0.5 KG nibo");
