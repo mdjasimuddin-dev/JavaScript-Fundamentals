@@ -21,6 +21,6 @@ const products = [
     get a product name from array
 */
 
-const itemName = products.filter(item=>item.price < 30000);
+const itemName = products.filter(item=>item[1].price < 30000);
 console.log(itemName);
 

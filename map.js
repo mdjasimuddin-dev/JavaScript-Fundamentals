@@ -28,3 +28,12 @@ console.log(product);
 */
 const sells = products.map(item => item.price);
 console.log(sells);
+
+
+const array1 = [1, 4, 9, 16, 25, 8];
+
+// Pass a function to map
+const map1 = array1.map((x) => x * 2);
+
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
