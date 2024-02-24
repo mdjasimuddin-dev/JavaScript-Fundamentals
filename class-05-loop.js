@@ -1,3 +1,30 @@
+// simple for loop 
+let loop = 10;
+for (let i = 0; i<loop; i++){
+    console.log("Count is : ", i);
+}
+
+
+// While loop
+let num = 1;
+while(num<10){
+    console.log("Number Print is value : ", num);
+    num++
+}
+
+
+
+// do while loop
+let i = 1;
+do{
+    console.log("I am sorry ", i)
+    i++
+}while(i<25)
+
+
+
+
+/*
 const num = [10, 15, 20, 25, 30, 35, 40];
 console.log(num)
 
@@ -53,3 +80,5 @@ let num4 = 100;
 for(let x=1; x<=num4; x++){
     console.log(x);
 }
+
+*/
