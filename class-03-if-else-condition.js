@@ -1,34 +1,35 @@
-// if Else condition 
-
-var num = 8;
-if(num<15){
-    console.log("This is a Valid Number");
-}else{
-    console.log("Please Enter a Valid Number");
+// JS if statement or if condition 
+let age = 21;
+if(age>18){
+    console.log("You are adult");
 }
 
 
-// Multiple condition
-var height = 166;
-var salary = 25000;
-var isBCS = true;
-
-// && operator use in this condition 
-
-if (height>165 && salary>25000){
-    console.log("This person is my crash");
+// JS if-else statement or if-else condition 
+let myAge = 16;
+if(myAge>18){
+    console.log("You are adult");
 }else{
-    console.log("This is a simple person");
-}
-
-// || operator use in this condition 
-if (height>165 || salary>25000){
-    console.log("This person is my crash");
-}else{
-    console.log("This is a simple person");
+    console.log("You are child");
 }
 
 
+
+/* JS if.. else-if statement
+    or if else-if condition
+*/
+let pass = 50;
+if(pass>33){
+    console.log("You passed exam");
+}else if(pass>80){
+    console.log("Your result is A+");
+}else{
+    console.log("You are failed");
+}
+
+
+
+/*
 
 
 // product price discount by any condition 
@@ -108,3 +109,5 @@ if (years>=18){
 
 var applePrice = 140;
 applePrice<=250 ? console.log("2 KG nibo") : console.log("0.5 KG nibo");
+
+*/
