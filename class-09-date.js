@@ -25,4 +25,44 @@ let getMonth = today.getMonth();
 console.log(getMonth);
 
 let getYear = today.getFullYear();
-console.log(getYear)
+console.log(getYear);
+
+
+let presentTime = new Date()
+let getHour = presentTime.getHours();
+console.log(getHour);
+
+let getMinutes = presentTime.getMinutes();
+console.log(getMinutes);
+
+let getSecond = presentTime.getSeconds();
+console.log(getSecond);
+
+let getMilleSecond = presentTime.getMilliseconds()
+console.log(getMilleSecond);
+
+
+// get Day Month Year
+let getDate = new Date();
+let toDay = getDate.getUTCDay()
+console.log(toDay);
+
+let toMonth = getDate.getUTCMonth()
+console.log(toMonth);
+
+let toYear = getDate.getUTCFullYear();
+console.log(toYear  + "\n");
+
+
+// get Present UTC time 
+let getNowHour = getDate.getUTCHours();
+console.log(getNowHour);
+
+let getNowMinutes = getDate.getUTCMinutes();
+console.log(getNowMinutes);
+
+
+let getNowSecond = getDate.getUTCSeconds();
+console.log(getNowSecond);
+
+
