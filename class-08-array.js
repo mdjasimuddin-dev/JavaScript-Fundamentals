@@ -196,3 +196,69 @@ console.log(animals);
 animals.unshift("Hen");
 console.log(animals);
 // Expected output: Array ["Hen, "pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+
+
+
+//13. array.reverse()
+const array1 = ['one', 'two', 'three'];
+const reversed = array1.reverse();
+console.log(reversed);
+// Expected output: "reversed:" Array ["three", "two", "one"]
+
+// Careful: reverse is destructive -- it changes the original array.
+console.log('array1:', array1);
+// Expected output: "array1:" Array ["three", "two", "one"]
+
+
+
+
+// 14. array.slice()
+const animals2 = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals2.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals2.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals2.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals2.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals2.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals2.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+
+
+
+// 15. array.sort()
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array2 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array2);
+// Expected output: Array [1, 100000, 21, 30, 4]
+
+
+
+
+
+// 15. array.splice()
+const monthsName = ['Jan', 'March', 'April', 'June'];
+monthsName.splice(1, 0, 'Feb');
+// Inserts at index 1
+console.log(monthsName);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+monthsName.splice(4, 1, 'May');
+// Replaces 1 element at index 4
+console.log(monthsName);
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
