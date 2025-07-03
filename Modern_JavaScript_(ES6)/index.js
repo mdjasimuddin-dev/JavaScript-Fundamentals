@@ -71,3 +71,43 @@ for (let city of myCity) {
     console.log(city);
 }
 
+
+
+// Object with for in loop
+const myObject = {
+    name: 'Md Jasim Uddin',
+    email: 'mdjasimuddin.dev@gmail.com',
+    age: 23,
+    occupation: 'student'
+}
+
+for (myObj in myObject) {
+    console.log(myObject[myObj]);
+}
+
+
+
+// Rest parameter function
+
+function totalSum(...numbers) {
+    let sum = 0
+    for (let i of numbers) {
+        sum = sum + i
+    }
+    console.log('Total Sum : ', sum);
+}
+
+totalSum(1, 2, 3)
+
+
+// Function Return 
+function funcOne() {
+    return 20
+}
+
+function funcTwo() {
+    return funcOne()
+}
+
+console.log('Return :', funcTwo());
+
