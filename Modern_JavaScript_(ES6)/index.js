@@ -100,6 +100,7 @@ function totalSum(...numbers) {
 totalSum(1, 2, 3)
 
 
+
 // Function Return 
 function funcOne() {
     return 20
@@ -108,6 +109,96 @@ function funcOne() {
 function funcTwo() {
     return funcOne()
 }
+console.log('Return :', funcTwo())
 
-console.log('Return :', funcTwo());
 
+
+// Anonymous Function 
+let AnonyFuncEx = function (name) {
+    return name
+}
+
+console.log(AnonyFuncEx('My name is Anonymous Function'));
+
+
+
+// Arrow Function 
+let ArrowFuncEx = (name) => {
+    return name
+}
+
+console.log(AnonyFuncEx('This is Arrow Function'));
+
+
+
+// Contractor Array Function 
+// simple array ====== let myCity = ['Dhaka', 'Rajshahi', 'Chittagong']
+let contractorArrayEx = new Array('Dhaka', 'Rajshahi', 'Chittagong', 'Rangpur', 'Barisal', 'Khulna');
+
+for (let item of contractorArrayEx) {
+    console.log("Contractor array :", item);
+}
+
+
+// MultiDimentional Array
+let Banglaesh = ['Dhaka', 'Rajshahi', 'Rangpur', 'Khulna', 'Barisal', 'Chittagong']
+let India = ['Delhi', 'Rajstan', 'Hyderabad', 'Kolkata']
+let Pakistan = ['Karachi', 'Panjab', 'Kashmir',]
+
+let Asia = [Banglaesh, India, Pakistan]
+console.log(Asia[2][2]);
+
+
+// Array De structure 
+
+let deStructure = ['Dhaka', 'Rajshahi', 'Rangpur',]
+let [a, , c] = deStructure
+
+console.log('Destructure : ', a, c);
+
+
+
+// map 
+
+let myMap = new Map()
+
+myMap.set('county1', 'Bangladesh')
+myMap.set('county2', 'India')
+myMap.set('county3', 'Pakistan')
+myMap.set('county4', 'Maldiv')
+myMap.set('county4', 'Nepal')
+myMap.set('county5', 'Bhutan')
+myMap.set('county6', 'Srilanka')
+myMap.set('county7', 'China')
+
+console.log(myMap);
+// see value 
+for (let ctry of myMap.values()) {
+    console.log("Map Value :", ctry);
+}
+
+
+// class create and use 
+
+
+class myClass {
+    myFunc = (name) => {
+        console.log(name);
+    }
+    myFunc2 = (name) => {
+        console.log(name);
+    }
+    myFunc3 = (name) => {
+        console.log(name);
+    }
+    myFunc4 = (name) => {
+        console.log(name);
+    }
+}
+
+
+var obj = new myClass
+obj.myFunc('This is class')
+obj.myFunc2('This is class2')
+obj.myFunc3('This is class3')
+obj.myFunc4('This is class4')
