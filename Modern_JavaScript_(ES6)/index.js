@@ -197,8 +197,48 @@ class myClass {
 }
 
 
-var obj = new myClass
+var obj = new myClass()
 obj.myFunc('This is class')
 obj.myFunc2('This is class2')
 obj.myFunc3('This is class3')
 obj.myFunc4('This is class4')
+
+
+
+
+
+
+// constructor 
+class newClass {
+    constructor() {
+        console.log("This is a constructor");
+    }
+}
+
+
+new newClass
+
+
+// inheritance
+
+class inheritanceEx {
+
+    hello(params) {
+        console.log(params);
+    }
+    hello2(params) {
+        console.log(params);
+    }
+}
+
+
+class child extends inheritanceEx {
+
+}
+
+
+var obj = new child()
+obj.hello('Inheritance 1st Func')
+
+
+
